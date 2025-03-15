@@ -33,6 +33,9 @@ public class AddressBookEntity {
         this.phone = phone;
     }
 
+    public AddressBookEntity() {
+    }
+
     public void setPhone(String phone) {
         this.phone = phone;
     }
