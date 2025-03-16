@@ -1,5 +1,6 @@
 package com.example.AddressBook.Entity;
 
+import com.example.AddressBook.Dto.AuthUserDto;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,6 +30,9 @@ public class AuthUserEntity {
         this.lastName = lastName;
         this.firstName = firstName;
         this.id = null;
+    }
+
+    public AuthUserEntity(AuthUserDto userDto) {
     }
 
     public String getFirstName() {
@@ -67,4 +71,7 @@ public class AuthUserEntity {
         return token;
     }
 
+    public Long getId() {
+        return id;
+    }
 }
