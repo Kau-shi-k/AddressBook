@@ -52,7 +52,7 @@ public class AuthUserService implements IAuthUser {
                             + "Last Name: " + user.getLastName() + "\n"
             );
 
-            log.info("User Registerd Succesfully ", user.getMail());
+            log.info("User Registerd Succesfully: {} ", user.getMail());
             return user;
         } catch(Exception e){
             log.error("Error Occured while registering User: {}", e.getMessage());
